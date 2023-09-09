@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+/* font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif; */
+:root{
+--dark_cyan: hsl(158, 36%, 37%);
+--cream_color: hsl(30, 38%, 92%);
+--very_dark_blue: hsl(212, 21%, 14%);
+--Dark_grayish_blue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%);
+--fondo:#F3EAE3;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.card-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: var(--fondo);
+    padding: 25px;
+}
+.card{
+    width: 100%;
+    border-radius: 10px;
+
+    max-width: 545px;
+    background-color: var(--White);
+}
+.card-description{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.card-img{
+    background-image: url(./images/image-product-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 322px;
+    height: 241px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.perfume{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: var(--Dark_grayish_blue);
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.perfume-title{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.perfume-description{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--Dark_grayish_blue);
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+.perfume-price{
+    display: flex;
+    align-items: center;
+}
+.price-big{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    color: var(--dark_cyan);
+    font-size: 30px;
+    margin-right: 20px;
+}
+.price-small{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--Dark_grayish_blue);
+    font-size: 12px;
+    text-decoration: line-through;
+}
+button{
+    background-color: var(--dark_cyan);
+    color: var(--White);
+    width: 90%;
+    height: 50px;
+    margin: 15px auto;
+    border-radius: 8px;
+    border: none;
+}
+button:hover{
+    background-color: #1A4031;
+    cursor: pointer;
+}
+
+@media (min-width: 600px){
+    .card{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-content: center;
+    }
+    .card-container{
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .card-img{
+        background-image: url(./images/image-product-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 273px;
+        height: 454px;
+    }
+}
