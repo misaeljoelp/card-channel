@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/misaeljoelp/card-channel)
-- Live Site URL: [Add live site URL here](https://misaeljoelp.github.io/card-channel/)
+- Solution URL: [Github](https://github.com/misaeljoelp/card-channel)
+- Live Site URL: [Github pages](https://misaeljoelp.github.io/card-channel/)
 
 ## My process
 
