@@ -3,115 +3,125 @@
 font-family: 'Montserrat', sans-serif; */
 :root{
 --dark_cyan: hsl(158, 36%, 37%);
---cream_color: hsl(30, 38%, 92%);
+--cream: hsl(30, 38%, 92%);
 --very_dark_blue: hsl(212, 21%, 14%);
 --Dark_grayish_blue: hsl(228, 12%, 48%);
 --White: hsl(0, 0%, 100%);
---fondo:#F3EAE3;
+--very-dark-green: hsl(156, 42%, 18%)
 }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.card-container{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    background-color: var(--fondo);
-    padding: 25px;
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    background-color: var(--cream);
 }
-.card{
-    width: 100%;
-    border-radius: 10px;
-
-    max-width: 545px;
+.card-container{
+    width: 344px;
+    height: 675px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 68px auto;
     background-color: var(--White);
 }
-.card-description{
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
+.card-img-image{
+    width: 100%;
 }
-.card-img{
-    background-image: url(./images/image-product-mobile.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 322px;
-    height: 241px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-}
+
 .perfume{
-    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     color: var(--Dark_grayish_blue);
-    font-size: 14px;
-    margin-bottom: 20px;
+    font-size: 1em;
+    margin: 18px 24px 8px 24px;
+    letter-spacing: 3px;
 }
 .perfume-title{
     font-family: 'Fraunces', serif;
+    margin: 0px 24px 16px 24px;
     font-weight: 700;
-    font-size: 2rem;
-    margin-bottom: 20px;
+    font-size: 2.2em;
+    color: var(--very_dark_blue);
+    line-height: 34px;
 }
 .perfume-description{
-    font-family: 'Montserrat', sans-serif;
+    margin: 0px 24px 44px 24px;
     color: var(--Dark_grayish_blue);
-    font-size: 14px;
+    font-size: 1em;
     line-height: 25px;
-    margin-bottom: 20px;
 }
 .perfume-price{
     display: flex;
     align-items: center;
+    gap: 16px;
+    margin: 0px 24px 16px 24px;
 }
 .price-big{
     font-family: 'Fraunces', serif;
-    font-weight: 700;
     color: var(--dark_cyan);
-    font-size: 30px;
-    margin-right: 20px;
+    font-size: 2.3em;
+    
 }
 .price-small{
-    font-family: 'Montserrat', sans-serif;
     color: var(--Dark_grayish_blue);
-    font-size: 12px;
     text-decoration: line-through;
 }
 button{
+    width: 296px;
+    height: 50px;
     background-color: var(--dark_cyan);
     color: var(--White);
-    width: 90%;
-    height: 50px;
-    margin: 15px auto;
     border-radius: 8px;
+    font-size: 1.1em;
+    font-weight: 700;
+    margin: auto;
+    display: block;
     border: none;
 }
 button:hover{
-    background-color: #1A4031;
+    background-color: var(--very-dark-green);
     cursor: pointer;
 }
-
-@media (min-width: 600px){
-    .card{
+button img{
+    margin-right: 12px;
+}
+@media (min-width: 620px){
+    /* .card{
         display: grid;
         grid-template-columns: 1fr 1fr;
         place-content: center;
-    }
+    } */
     .card-container{
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
+        width: 600px;
+        height: 450px;
+        margin: 175px auto 75px;
+    }
+    .card{
+        display: flex;
     }
     .card-img{
-        background-image: url(./images/image-product-desktop.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        width: 273px;
-        height: 454px;
+        width: 300px;
     }
-}
+    .card-description{
+        width: 300px;
+    }
+    .card-img-image{
+        content: url(./images/image-product-desktop.jpg);
+    }
+ 
+    .perfume{
+        margin: 32px 24px 16px 24px;
+    }
+    .perfume-description{
+        margin-bottom: 24px;
+        line-height: 24px;
+    }
+    .perfume-price{
+        margin-bottom: 26px;
+    }
+    button{
+        width: 240px;
+    }
+} 
