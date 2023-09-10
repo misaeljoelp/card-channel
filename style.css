@@ -25,6 +25,9 @@ body{
     margin: 68px auto;
     background-color: var(--White);
 }
+.card{
+    min-height:100vh;
+}
 .card-img-image{
     width: 100%;
 }
@@ -90,7 +93,7 @@ button img{
     .card-container{
         width: 600px;
         height: 450px;
-        margin: 175px auto 75px;
+        margin: 75px auto 75px;
     }
     .card{
         display: flex;
@@ -101,10 +104,6 @@ button img{
     .card-description{
         width: 300px;
     }
-    .card-img-image{
-        content: url(./images/image-product-desktop.jpg);
-    }
- 
     .perfume{
         margin: 32px 24px 16px 24px;
     }
